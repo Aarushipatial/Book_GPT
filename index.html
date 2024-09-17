@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book GPT</title>
+</head>
+<body>
+    <h1>Book GPT</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">Upload PDF:</label>
+        <input type="file" name="file" accept=".pdf" required>
+        <br><br>
+        <label for="question">Ask a Question:</label>
+        <input type="text" name="question" placeholder="Type your question here" required>
+        <br><br>
+        <input type="submit" value="Get Answer">
+    </form>
+    <h2>Answer:</h2>
+    <p>{{ answer }}</p>
+</body>
+</html>
